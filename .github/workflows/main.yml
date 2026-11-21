@@ -44,5 +44,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cloudflare-cache-
 
-      - name: Run — Sync Block & Allow to Cloudflare Gateway
-        run: python -m cloudflare_gateway run
+      - name: Cloudflare Gateway Zero Trust
+        run: python -m cloudflare_gateway leave
